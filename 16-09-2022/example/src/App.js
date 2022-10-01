@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-
-import './App.css';
+import Calculate from "./components/Calculate";
+import Typing from "./components/Typing";
+import "./App.css";
 
 // Paigaldasime MUI (mui.com)
 
@@ -30,13 +31,14 @@ const App = () => {
         gap: '25px',
         height: '100vh'
       }}
+      
     >
+      <Calculate/>
+      <Typing />
       {/* Siin puudub nimi, ehk tuleb defaultPropsist */}
       <PropExample/>
-      <PropExample name='Raimo'/>
-      <PropExample2 name={'Raimo'}/>
-      <PropExample3 name="Raimo"/>
-      <PropExample4 name={"Raimo"}/>
+      <PropExample name='Erv'/>
+      
 
       <Button 
         variant="contained" 
